@@ -38,23 +38,33 @@ const Contact = () => {
                         <AiOutlineLinkedin className='contact__option__icon'/>
                         <h4>Linkedin</h4>
                         <h5>Profile</h5>
-                        <a href='https://www.linkedin.com/in/brown-djomo-844b96164/' target='_blank'>Tape me on LinkedIn</a>
+                        <a href='https://www.linkedin.com/in/brown-djomo-844b96164/' target='_blank'>Tap me on LinkedIn</a>
                     </article>
 
                     <article className='contact__option'>
                         <BsWhatsapp className='contact__option__icon'/>
                         <h4>Whatsapp</h4>
                         <h5>Direct message</h5>
-                        <a href='https://web.whatsapp.com/send?phone=+237691184732'
-                        target='_blank'>Whatsapp me</a>
+                        <a href='https://web.whatsapp.com/send?phone=+237691184732' target='_blank'>Whatsapp me</a>
                     </article>
                 </div>
 
                 <form ref={form} onSubmit={sendEmail}>
-                    <input type="text" name='name' placeholder='full name' required/>
-                    <input type="email" name='email' placeholder='your email' required/>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder='your message' required></textarea>
-                    <button type="submit" className='btn btn-primary'>send message</button>
+                    <div className='Name'>
+                        <input type="text" name='name' placeholder='full name' required/>
+                    </div>
+
+                    <div className='Email'>
+                        <input type="email" name='email' placeholder='your email' required/>
+                    </div>
+                    
+                    <div className='Message'>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder='your message' required></textarea>
+                    </div>
+
+                    <div className='submit-Btn'>
+                        <button type="submit" className='btn btn-primary'>send message</button>
+                    </div>
                 </form>
             </div>
         </section>
