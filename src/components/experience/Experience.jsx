@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import "./experience.css";
+import ListExperiences from "./components/listExperiences";
 
-const Experience = () => {
+export const Experience = () => {
   return (
-    <div>Experience</div>
-  )
+    <section id="experience">
+      <h5>What skills i have</h5>
+      <h2>My Experience</h2>
+      <div className="container experience__container">
+        {//<ListExperiences />
 }
-
-export default Experience
+      <p><ul class="skills">
+          <li>Proficient in C++ and C</li>
+          <li>Proficient in UI/UX designing</li>
+          <li>Creativity and Good Thinker</li>
+          <li>Game Developper</li>
+        </ul></p>
+      </div>
+    </section>
+  );
+};
+export default Experience;
