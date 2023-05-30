@@ -4,7 +4,7 @@ import {MdOutlineEmail} from 'react-icons/md'
 import {AiOutlineLinkedin} from 'react-icons/ai'
 import {BsWhatsapp} from 'react-icons/bs'
 import {useRef} from 'react'
-//import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
     const form = useRef();
@@ -12,7 +12,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        //emailjs.sendForm('service_5vuauza', 'template_fdnnl56', form.current, 'EmSdUNQzQuxxkUqGWx')
+        emailjs.sendForm('service_2qd9idn', 'template_1m8mlfs', form.current, '3ldy66SJlH_kOdxyO')
         e.target.reset()
         .then((result) => {
             console.log(result.text);
@@ -30,15 +30,15 @@ const Contact = () => {
                     <article className='contact__option'>
                         <MdOutlineEmail className='contact__option__icon'/>
                         <h4>Email</h4>
-                        <h5>myEmail@gmail.com</h5>
-                        <a href='mailto:donden5000@gmail.com' target='_blank'>send a message</a>
+                        <h5>suhdenzo04@gmail.com</h5>
+                        <a href='mailto:donden5000@gmail.com' target='_blank'>Send a message</a>
                     </article>
 
                     <article className='contact__option'>
                         <AiOutlineLinkedin className='contact__option__icon'/>
                         <h4>Linkedin</h4>
                         <h5>Profile</h5>
-                        <a href='https://www.linkedin.com/in/brown-djomo-844b96164/' target='_blank'>Tap me on LinkedIn</a>
+                        <a href='https://www.linkedin.com/in/suhbisi-denzel-nsiela-78991926a/' target='_blank'>Tap me on LinkedIn</a>
                     </article>
 
                     <article className='contact__option'>
@@ -51,19 +51,19 @@ const Contact = () => {
 
                 <form ref={form} onSubmit={sendEmail}>
                     <div className='Name'>
-                        <input type="text" name='name' placeholder='full name' required/>
+                        <input type="text" name='name' placeholder='Full Name' required/>
                     </div>
 
                     <div className='Email'>
-                        <input type="email" name='email' placeholder='your email' required/>
+                        <input type="email" name='email' placeholder='Your email address' required/>
                     </div>
                     
                     <div className='Message'>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder='your message' required></textarea>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder='Your message' required></textarea>
                     </div>
 
                     <div className='submit-Btn'>
-                        <button type="submit" className='btn btn-primary'>send message</button>
+                        <button type="submit" className='btn btn-primary'>Send A Message</button>
                     </div>
                 </form>
             </div>
