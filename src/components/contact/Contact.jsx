@@ -14,11 +14,11 @@ const Contact = () => {
 
         emailjs.sendForm('service_2qd9idn', 'template_1m8mlfs', form.current, '3ldy66SJlH_kOdxyO')
         e.target.reset()
-        .then((result) => {
+        /*.then((result) => {
             console.log(result.text);
         },(error) => {
             console.log(error.text);
-        });
+        });*/
 };
     return (
         <section id='contact'>
