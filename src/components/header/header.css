@@ -38,8 +38,8 @@ header{
 .my_image{
     background: linear-gradient(
     var(--color-primary), transparent);
-    width: 100%;
-    Height:100%;
+    width: 50%;
+    height: 50%;
     position: absolute;
     left: calc(50% - 11rem); /*this help to place the image to the middle of screen*/
     margin-top: 4rem;
@@ -69,11 +69,11 @@ header{
         height:100vh
     }
 
-    .my_image{
+    /* .my_image{
         overflow: visible !important;
         height: 30%;
         width: 30%;
-    }
+    } */
     .header__social, .scroll__down{
         display: none !important;
     }
