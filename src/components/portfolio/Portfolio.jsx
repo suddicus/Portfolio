@@ -8,7 +8,6 @@ import img6 from "../../assets/img6.png";
 import img7 from "../../assets/img7.png";
 import img8 from "../../assets/img8.png";
 import img9 from "../../assets/img9.png";
-import ListPortfolio from "./listPortfolio";
 
 export const Portfolio = () => {
   const portfolioContent = [
@@ -79,8 +78,7 @@ export const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My recent work</h5>
-      <h2>Portfolio</h2>
-<ListPortfolio/>  
+      <h2>Portfolio</h2> 
       <div className="container portfolio__container">
       {
         portfolioContent.map((content, id) =>{

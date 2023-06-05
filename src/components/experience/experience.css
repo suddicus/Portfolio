@@ -54,6 +54,10 @@
         width: 88%;
         padding:1rem;
         margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .experience__content{
@@ -90,16 +94,11 @@
         padding:2rem 1rem;
     }
 
-    .experience__details{
-        align-content: center;
-    }
     .experience__details > div{
         display: grid;
         justify-content: center;
         text-align: center;
         align-items: center;
     }
-    .experience__container{
-        align-content: center;
-    }
+    
 } 
