@@ -1,6 +1,6 @@
 import React from "react";
 import "./testimonial.css";
-import IMG from "../../assets/changer.jpg";
+import IMG from "../../assets/img8.png";
 import AV1 from "../../assets/avat1.jpg";
 import AV2 from "../../assets/avat2.jpg";
 import AV3 from "../../assets/avat3.jpg";
