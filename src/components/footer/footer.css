@@ -14,6 +14,7 @@
 }
 .footer__container a{
     color: var(--color-bg);
+    width: 100%;
 }
 
 .footer__container a:hover{

@@ -31,10 +31,6 @@
     margin-top: 1rem;
 }
 
-.experience__details{
-    display:flex;
-    gap: 1rem;
-}
 .title__level{
     display: flex;
     flex-direction: column;
@@ -42,7 +38,7 @@
 
 .experience__details__icon{
     margin-top: 20px;
-    color: var(--color-primary)
+    color: var(--color-primary);
 }
 
 .experience_description{
@@ -91,6 +87,19 @@
         
     .experience__container > div{
         width: 100%;
-        padding:2rem 1rem
+        padding:2rem 1rem;
+    }
+
+    .experience__details{
+        align-content: center;
+    }
+    .experience__details > div{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .experience__container{
+        align-content: center;
     }
 } 

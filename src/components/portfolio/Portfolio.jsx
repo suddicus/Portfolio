@@ -17,63 +17,63 @@ export const Portfolio = () => {
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 1,
-      title:'Project 1'
+      title:'Interactice Two Player Games'
     },
     {
       image : img2,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 2,
-      title:'Project 2'
+      title:'Scientific Calculator'
     },
     {
       image : img3,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 4,
-      title:'Project 4'
+      title:'Health Care Management System'
     },
     {
       image : img5,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 5,
-      title:'Project 5'
+      title:'Hospital Management System'
     },
     {
       image : img6,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 6,
-      title:'Project 6'
+      title:'16 bit Microprocessor Design'
     },
       {
       image : img7,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 7,
-      title:'Project 7'
+      title:'Implementation of Chess'
     },
     {
       image : img8,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 8,
-      title:'Project 8'
+      title:'Fibonacci Sequence'
     },
     {
       image : img9,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 9,
-      title:'Project 9'
+      title:'MD5 Hash Algorithm'
     },
     {
       image : img1,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 10,
-      title:'Project 10'
+      title:'Bank Management System'
     },
   ]
   return (

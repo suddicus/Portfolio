@@ -12,13 +12,12 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_2qd9idn', 'template_1m8mlfs', form.current, '3ldy66SJlH_kOdxyO')
-        e.target.reset()
-        /*.then((result) => {
-            console.log(result.text);
-        },(error) => {
-            console.log(error.text);
-        });*/
+        emailjs.sendForm('service_uqwzoks', 'template_r5i8lki', form.current, 'iS8guvw6coa4SSHki')
+        e.target.reset()//.then((result) => {
+        //     console.log(result.text);
+        // },(error) => {
+        //     console.log(error.text);
+        // });
 };
     return (
         <section id='contact'>
@@ -51,11 +50,11 @@ const Contact = () => {
 
                 <form ref={form} onSubmit={sendEmail}>
                     <div className='Name'>
-                        <input type="text" name='name' placeholder='Full Name' required/>
+                        <input type="text" name='user_name' placeholder='Full Name' required/>
                     </div>
 
                     <div className='Email'>
-                        <input type="email" name='email' placeholder='Your email address' required/>
+                        <input type="email" name='user_email' placeholder='Your email address' required/>
                     </div>
                     
                     <div className='Message'>

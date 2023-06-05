@@ -21,7 +21,6 @@
     overflow: hidden;
     transform: rotate(-10deg);
     transition: var(--transition);
-    ;
 }
 
 .about__me__image:hover{
@@ -30,8 +29,9 @@
 
 .about__cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    overflow: hidden;
 }
 
 .about__card{
@@ -40,6 +40,7 @@
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
+    border-radius: 30px;
 }
 
 .about__card:hover{
@@ -100,7 +101,7 @@
 }
 
 .about__cards{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
 }
 
