@@ -69,6 +69,6 @@ header{
     }
     
     .header__social, .scroll__down{
-        display: none;
+        display: none !important;
     }
 }
