@@ -4,7 +4,7 @@ import "./portfolio.css";
 
 export const Portfolio = () => {
 
-    const {data, setData} = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         axios.get("https://backend-portfolio.cyclic.app/api/portfolio").then(response => {
@@ -15,7 +15,7 @@ export const Portfolio = () => {
                 github: item.github,
                 demo: item.demo
             }));
-            setData(formattedData)
+            setData(formattedData);
         }).catch(error => {
             console.log("Error fetching portfolio data:", error);
         })
@@ -25,16 +25,16 @@ export const Portfolio = () => {
         <section id="portfolio">
             <h5>My Recent Work</h5>
             <h2>Portfolio</h2>
-            <div className="container portfolio_container">
+            <div className="container portfolio__container">
                 {data.map(({ id, image, title, github, demo }) => (
                     <article key={id} className="portfolio__item">
-                        <div className="portfolio__item-img">
-                            <img src={image} alt={title} />
+                        <div className="portfolio__item__image">
+                            <img src={image} alt={title} className="portImage"/>
                         </div>
                         <h3>{title}</h3>
-                        <div className="portfolio__item-cta">
+                        <div className="portfolio__item__cta">
                             <a href={github} className="btn" target="_blank" rel="nopoener noreferrer">GitHub</a>
-                            <a href={demo} classname="btn btn-primary" target="_blank" rel="noopener noreferre">Live Demo</a>
+                            <a href={demo} className="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
                         </div>
                     </article>
                 ))}

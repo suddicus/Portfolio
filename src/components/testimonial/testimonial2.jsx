@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Testimonial = () => {
-    const {data, setData} = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         axios.get("https://backend-portfolio.cyclic.app/api/testimonial").then(response => {
@@ -15,9 +15,9 @@ const Testimonial = () => {
                 id: item._id,
                 avatar: item.avatar,
                 nam: item.name,
-                review: item.reviw
+                review: item.review
             }));
-            setData(formattedData)
+            setData(formattedData);
         }).catch(error => {
             console.log("Error fetching testimonials data:", error);
         })
@@ -27,17 +27,22 @@ const Testimonial = () => {
         <section id="testimonials">
             <h5>Review from Clients</h5>
             <h2>Testimonials</h2>
-            <Swiper classname="container testimonials__container" modules={[Pagination]} spaceBetween={40} slidesPerView={2} pagination={{ clickable: true }} >
+            <Swiper className="container testimonials__container"
+            modules={[Pagination]}
+            spaceBetween={40}
+            slidesPerView={2}
+            pagination={{ clickable: true }} >
+
             {
-                data.map(({id, avatar, name, review}) => {
-                    <SwiperSlide key={id} classname="testimonial">
+                data.map(({id, avatar, name, review}) => (
+                    <SwiperSlide key={id} className="testimonial">
                         <div className="client__avatar">
                             <img src={avatar} alt={name} />
                         </div>
                         <h5>{name}</h5>
                         <small className="client__review">{review}</small>
                     </SwiperSlide>
-                })
+                ))
             }
             </Swiper>
         </section>
